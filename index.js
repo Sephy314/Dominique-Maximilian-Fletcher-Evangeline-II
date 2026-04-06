@@ -63,7 +63,7 @@ function startServer() {
 
 
 function mcrcon(cmd) {
-  exec(`mcrcon -H 127.0.0.1 -P 10000 -p ${process.env.RCON_PASSWORD} "${cmd}"`,
+  exec(`mcrcon -H 127.0.0.1 -P 10000 -p ${process.env.PW} "${cmd}"`,
     (err, stdout, stderr) => {
       if (err) {
         console.error('에러:', err);
